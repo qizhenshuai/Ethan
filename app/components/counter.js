@@ -19,23 +19,36 @@ class Counter extends Component {
                     <Text style={styles.unitBlock}>/ times</Text>
                 </View>
                 <View style={[styles.controlPanel, styles.inline]}>
-                    <TouchableHighlight onPress={increment} style={styles.buttonAddSmall} underlayColor={colors.add.bg}>
+                    <TouchableHighlight
+                        onPress={increment}
+                        style={styles.buttonAddSmall}
+                        underlayColor={colors.add.bg}>
                         <Text style={[styles.text, styles.textColorAdd]}>+</Text>
                     </TouchableHighlight>
-                    <TouchableHighlight onPress={decrement} style={styles.buttonMinusSmall} underlayColor={colors.minus.bg}>
+                    <TouchableHighlight
+                        onPress={decrement}
+                        style={styles.buttonMinusSmall}
+                        underlayColor={colors.minus.bg}>
                         <Text style={[styles.text, styles.textColorMinus]}>-</Text>
                     </TouchableHighlight>
                 </View>
                 <View style={styles.controlPanel}>
-                    <TouchableHighlight onPress={incrementIfOdd} style={styles.buttonAdd} underlayColor={colors.add.bg}>
+                    <TouchableHighlight
+                        onPress={incrementIfOdd}
+                        style={styles.buttonAdd}
+                        underlayColor={colors.add.bg}>
                         <Text style={[styles.text, styles.textColorAdd]}>Increment if odd</Text>
                     </TouchableHighlight>
                     <TouchableHighlight
-                        onPress={() => incrementAsync()} style={styles.buttonAdd} underlayColor={colors.add.bg}>
+                        onPress={() => incrementAsync()}
+                        style={styles.buttonAdd}
+                        underlayColor={colors.add.bg}>
                         <Text style={[styles.text, styles.textColorAdd]}>Increment async</Text>
                     </TouchableHighlight>
                     <TouchableHighlight
-                        onPress={() => decrementAsync()} style={styles.buttonMinus} underlayColor={colors.minus.bg}>
+                        onPress={() => decrementAsync()}
+                        style={styles.buttonMinus}
+                        underlayColor={colors.minus.bg}>
                         <Text style={[styles.text, styles.textColorMinus]}>Decrement async</Text>
                     </TouchableHighlight>
                 </View>
